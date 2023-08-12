@@ -1,9 +1,19 @@
-.about-us{
-    &__image{
+/* section-products */
 
+.products {
+    background-color: $primary-color;
+    &__subtitle{
+        color: grey;
+        &:hover{
+            color: blue;
+        }
+        &::after{
+            background-color: aqua;
+        }
     }
 
     &__title{
-        
+        color:black
     }
+
 }
