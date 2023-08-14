@@ -1,19 +1,155 @@
 /* section-products */
 
 .products {
-    background-color: $primary-color;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
     &__subtitle{
-        color: grey;
-        &:hover{
-            color: blue;
-        }
-        &::after{
-            background-color: aqua;
-        }
+        font-family: $font-logo;
+        color: #FFB8CA;
+        font-size: 30px;
+        font-weight: 400;  
     }
 
     &__title{
-        color:black
+        font-family: $font-logo;
+        color: #D41443;
+        font-size: 58px;
+        font-weight: 400;  
     }
 
+    &__card-one {
+        justify-content: center;
+        text-align: center;
+        width: 368px;
+        height: 796px;
+        background-color:#FFB8CA;
+    }
+
+    &__card-title {
+        font-family: $font-logo;
+        font-size: 30px;
+        font-weight: 400;
+        text-align: center;
+        color: #E1E1E1;
+    }
+
+    &__card-body {
+        font-family: $font-principal;
+        font-size: 16px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    &__card-two {
+        justify-content: center;
+        text-align: center;
+        width: 368px;
+        height: 796px;
+        background-color:$card-two-color;
+    }    
+
+    &__card-three {
+        justify-content: center;
+        text-align: center;
+        width: 368px;
+        height: 796px;
+        background-color:$card-three-color;
+    }
+}
+
+/* section-offices */
+
+.office {
+    height: auto;
+    display: flex;
+    gap: 32px;
+    
+    &__list {
+        width: 368px;
+        height: 538px;
+        padding: 40px;
+        border: 1px;
+        border-radius: 24px;
+        box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.10);
+    }
+
+    &__title-one {
+        border-radius: 6px;
+        background: #F0D1A5;
+        width: 75.103px;
+        height: 28px;
+        flex-shrink: 0;
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        color: #FFF;
+        justify-content: center;
+        margin-bottom: 0;
+    }
+
+    &__subtitle {
+        color: #000;
+        font-family: DM Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 186%; /* 29.76px */
+        letter-spacing: 0.64px;
+        margin-top: 32px;
+        margin-bottom: 0;
+    }
+
+    &__body {
+        color: #907E82;
+        font-family: DM Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px; /* 29.28px */
+        letter-spacing: 0.64px;
+        margin-bottom: 32px;
+    }
+
+    &__line {
+        width: 288px;
+        height: 0px; 
+        border: 0.50px #E1E1E1 solid
+    }
+
+    &__hour{
+        color: #FFA5BA;
+        font-family: DM Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 186%;
+        margin-bottom: 32px;
+        margin-top: 0;
+    }
+
+    &__phone {
+        color: #907E82;
+        font-family: DM Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px; /* 29.28px */
+        letter-spacing: 0.64px;
+        margin-bottom: 0;  
+        margin-top: 32px;
+    }
+
+    &__mail{
+        color: #907E82;
+        font-family: DM Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px; /* 29.28px */
+        letter-spacing: 0.64px;
+        margin-bottom: 40px;  
+        margin-top: 8px;
+    }
 }
