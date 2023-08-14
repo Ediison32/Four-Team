@@ -153,3 +153,107 @@
         margin-top: 8px;
     }
 }
+
+/* section-advantages */
+.advantages{
+    display: flex;
+    background-color: #FFF5F6;
+    text-align: left;
+    .list{
+        margin: auto;
+        display: flex;
+        text-align: left;
+       
+    }
+    .list_items{
+        text-align: left;
+    }
+    .title{
+        color: $primary-color;
+        font-size:48px ;
+        font-weight: 400px;
+        line-height: 54.96px;
+        padding-top:10px ;
+        padding-bottom:10px ;
+       
+    }
+    .text{
+        color:black;
+        width: 70%;
+    }
+}
+
+/* section-about-us */
+.about-us{
+    margin: auto;
+    width: 1200px;
+    height: 685px;
+    background-color: #FFF5F6;
+    padding-top: 50px;
+    .title-one{
+        color:$about-us-color-title-one;
+        font-weight: 400px;
+        font-size: 30px;
+        line-height: 34.35px;
+        text-align: center;
+    }
+    .title-two{
+        color:$primary-color;
+        font-weight: 400px;
+        font-size: 58px;
+        line-height: 66.41px;
+        text-align: center;
+      }
+      .content{
+        display: flex;
+        flex-direction: row;
+        padding: 20px;
+      }
+      .imagen{
+        width: 501px;
+        height: 501px;
+      }
+        .paraghaphs{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         padding-left: 100px; 
+        }  
+      .paragraph-one{
+        color:black;
+        width: 334px;
+        height: 95px;
+        font-size: 16px;
+        font-weight: 500px;
+        line-height: 28.16px;
+        text-align: justify;
+      }
+      .paragraph-two{
+        color:$about-us-color-paragraph-two;
+        width: 334px;
+        height: 130px;
+        font-size: 14px;
+        font-weight: 500px;
+        line-height: 27.16px;
+        text-align: justify;
+      }
+        .button-read{
+        width: 176px;
+        height: 44px;
+        background-color: $white;
+        color: $about-us-color__button-read;
+        border-radius: 4px;
+        font-size: 16px;
+        font-weight: 700px;
+        line-height: 20.16px;
+        text-align: center;
+      }
+      .button-read:hover{
+        background-color:$primary-color;
+        color:$white;
+      }
+       .svg{
+        margin-top: -15px;
+        padding-left: 140px;
+        }
+}
