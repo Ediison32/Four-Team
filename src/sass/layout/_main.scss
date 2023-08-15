@@ -153,12 +153,99 @@
         margin-top: 8px;
     }
 }
-
+/* section-about-us */
+.about-us{
+    margin: 0 auto;
+    width: 1280px;
+    display: flex;
+    background-image:
+    url('../images/Backgrounmilk_main_about.png');
+    background-repeat: no-repeat;
+    color: var(--h1-color-white);
+    background-color: #FFF5F6;
+    .title-one{
+        color:$about-us-color-title-one;
+        font-weight: 400px;
+        font-size: 30px;
+        line-height: 34.35px;
+        text-align: center;
+    }
+    .title-two{
+        color:$primary-color;
+        font-weight: 400px;
+        font-size: 58px;
+        line-height: 66.41px;
+        text-align: center;
+      }
+      .content{
+        display: flex;
+        flex-direction: row;
+      }
+      .imagen{
+        width: 501px;
+        height: 501px;
+      }
+        .paraghaphs{
+         display: flex;
+         flex-direction: column;
+         justify-content: left;
+         padding-left: 100px; 
+        }  
+      .paragraph-one{
+        color:black;
+        width: 334px;
+        height: 95px;
+        font-size: 16px;
+        font-weight: 500px;
+        line-height: 28.16px;
+        text-align: justify;
+        margin: 30px;
+      }
+      .paragraph-two{
+        color:$about-us-color-paragraph-two;
+        width: 334px;
+        height: 130px;
+        font-size: 14px;
+        font-weight: 500px;
+        line-height: 27.16px;
+        text-align: justify;
+        margin: 30px;
+      }
+      .btn{
+        border: none;
+      }
+        .button-read{
+        width: 176px;
+        height: 44px;
+         background-color: $white;
+         color: $about-us-color__button-read;
+        border-radius: 4px;
+        font-size: 16px;
+        font-weight: 700px;
+        line-height: 20.16px;
+        margin: 30px;
+        padding-top: 10px;
+      }
+      .button-read:hover{
+        background-color:$primary-color;
+        color:$white;
+      }
+       .svg{
+        margin-top: -13px;
+        padding-left: 140px;
+        }
+}
 /* section-advantages */
 .advantages{
+    margin: 0 auto;
+    width: 1280px;
     display: flex;
     background-color: #FFF5F6;
     text-align: left;
+    .svg-advantages{
+        width: 50px;
+        height: 50px;
+    }
     .list{
         margin: auto;
         display: flex;
@@ -183,77 +270,3 @@
     }
 }
 
-/* section-about-us */
-.about-us{
-    margin: auto;
-    width: 1200px;
-    height: 685px;
-    background-color: #FFF5F6;
-    padding-top: 50px;
-    .title-one{
-        color:$about-us-color-title-one;
-        font-weight: 400px;
-        font-size: 30px;
-        line-height: 34.35px;
-        text-align: center;
-    }
-    .title-two{
-        color:$primary-color;
-        font-weight: 400px;
-        font-size: 58px;
-        line-height: 66.41px;
-        text-align: center;
-      }
-      .content{
-        display: flex;
-        flex-direction: row;
-        padding: 20px;
-      }
-      .imagen{
-        width: 501px;
-        height: 501px;
-      }
-        .paraghaphs{
-         display: flex;
-         flex-direction: column;
-         justify-content: center;
-         padding-left: 100px; 
-        }  
-      .paragraph-one{
-        color:black;
-        width: 334px;
-        height: 95px;
-        font-size: 16px;
-        font-weight: 500px;
-        line-height: 28.16px;
-        text-align: justify;
-      }
-      .paragraph-two{
-        color:$about-us-color-paragraph-two;
-        width: 334px;
-        height: 130px;
-        font-size: 14px;
-        font-weight: 500px;
-        line-height: 27.16px;
-        text-align: justify;
-      }
-        .button-read{
-        width: 176px;
-        height: 44px;
-        background-color: $white;
-        color: $about-us-color__button-read;
-        border-radius: 4px;
-        font-size: 16px;
-        font-weight: 700px;
-        line-height: 20.16px;
-        text-align: center;
-      }
-      .button-read:hover{
-        background-color:$primary-color;
-        color:$white;
-      }
-       .svg{
-        margin-top: -15px;
-        padding-left: 140px;
-        }
-}
