@@ -66,11 +66,18 @@
         margin-top: 180px;
     }
 
+    &__circle-list{
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        gap: 3px;
+    }
+
     &__circle{
         width: 6px;
         height: 6px;
-        color: white;
-        border-radius: 5%;
+        background-color: white;
+        border-radius: 50%;
     }
 
     &__card-body {
@@ -111,6 +118,7 @@
         border-radius: 50%;
         width: 40px;
         height: 40px;
+        margin-top: 20px;
     }
 }
 
@@ -349,4 +357,13 @@
         margin-top: -15px;
         padding-left: 140px;
         }
+}
+
+/*section-gallery */
+.gallery{
+    justify-content: center;
+    
+    &__image{
+        margin: 94px;
+    }
 }
