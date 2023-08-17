@@ -36,6 +36,7 @@
         font-size: 30px;
         font-weight: 400;  
         margin: 20px;
+        margin-top: 40px;
     }
 
     &__title{
@@ -127,6 +128,7 @@
 .office {
     height: auto;
     display: flex;
+    justify-content: center;
 
     &__list{
         display: flex;
@@ -236,7 +238,7 @@
         font-size: 16px;
         font-style: normal;
         font-weight: 500;
-        line-height: 24px; /* 29.28px */
+        line-height: 24px;
         letter-spacing: 0.64px;
         margin-bottom: 0;  
         margin-top: 32px;
@@ -248,15 +250,63 @@
         font-size: 16px;
         font-style: normal;
         font-weight: 500;
-        line-height: 24px; /* 29.28px */
+        line-height: 24px;
         letter-spacing: 0.64px;
         margin-bottom: 40px;  
         margin-top: 8px;
     }
+
+    &__btn-list{
+        display: flex;
+        justify-content: center;
+        border-color: none;
+    }
+
+    &__btn-products{
+        border: none;
+        font-family: $font-principal;
+        width: 176px;
+        height: 44px;
+        background-color: $white;
+        color: $about-us-color__button-read;
+        border-radius: 20px;
+        font-size: 16px;
+        font-weight: 700px;
+        line-height: 20.16px;
+        margin: 30px;
+        padding: 5px;
+        box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.10);
+        &:hover{
+        background-color:$primary-color;
+        color:$white;
+        }
+    }
+
+    &__btn-made{
+        border: none;
+        width: 176px;
+        height: 44px;
+        background-color: $white;
+        color: $about-us-color__button-read;
+        font-family: $font-principal;
+        border-radius: 20px;
+        font-size: 16px;
+        font-weight: 700px;
+        line-height: 20.16px;
+        margin: 30px;
+        padding: 5px;
+        box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.10);
+        &:hover{
+        background-color:$primary-color;
+        color:$white;
+        }
+    }
 }
+
 /* section-about-us */
 .about-us{
     margin: 0 auto;
+    margin-top: 50px;
     width: 1280px;
     display: flex;
     background-image:
@@ -264,78 +314,95 @@
     background-repeat: no-repeat;
     color: var(--h1-color-white);
     background-color: #FFF5F6;
-    .title-one{
-        color:$about-us-color-title-one;
+    
+    &__title-one {
+        color:#FFB8CA;
+        font-family: $font-logo;
         font-weight: 400px;
         font-size: 30px;
         line-height: 34.35px;
         text-align: center;
     }
-    .title-two{
+
+    &__title-two{
         color:$primary-color;
+        font-family: $font-logo;
         font-weight: 400px;
         font-size: 58px;
         line-height: 66.41px;
         text-align: center;
-      }
-      .content{
-        display: flex;
-        flex-direction: row;
-      }
-      .imagen{
+        margin-top: 0;
+    }
+
+    &__content{
+       display: flex;
+       flex-direction: row;
+    }
+
+    &__imagen{
         width: 501px;
         height: 501px;
-      }
-        .paraghaphs{
+    }
+        
+    &__paraghaphs{
          display: flex;
          flex-direction: column;
          justify-content: left;
          padding-left: 100px; 
-        }  
-      .paragraph-one{
+         font-family: $font-principal;
+    }  
+
+    &__paragraph-one{
         color:black;
         width: 334px;
         height: 95px;
         font-size: 16px;
-        font-weight: 500px;
-        line-height: 28.16px;
+        font-weight: 700px;
+        line-height: 28px;
         text-align: justify;
         margin: 30px;
-      }
-      .paragraph-two{
+    }
+
+    &__paragraph-two{
         color:$about-us-color-paragraph-two;
         width: 334px;
         height: 130px;
-        font-size: 14px;
-        font-weight: 500px;
-        line-height: 27.16px;
+        font-size: 16px;
+        font-weight: 700px;
+        line-height: 28px;
         text-align: justify;
         margin: 30px;
-      }
-      .btn{
+    }
+
+    &__btn{
         border: none;
-      }
-        .button-read{
+        box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.10);
+    }
+
+    &__button-read{
+        font-family: $font-principal;
         width: 176px;
         height: 44px;
-         background-color: $white;
-         color: $about-us-color__button-read;
-        border-radius: 4px;
+        background-color: $white;
+        color: $about-us-color__button-read;
+        border-radius: 20px;
         font-size: 16px;
         font-weight: 700px;
         line-height: 20.16px;
         margin: 30px;
         padding-top: 10px;
-      }
-      .button-read:hover{
+        &:hover{
         background-color:$primary-color;
         color:$white;
-      }
-       .svg{
+        }
+    }
+
+    &__svg{
         margin-top: -13px;
         padding-left: 140px;
-        }
+    }
 }
+
 /* section-advantages */
 .advantages{
     margin: 0 auto;
@@ -343,29 +410,36 @@
     display: flex;
     background-color: #FFF5F6;
     text-align: left;
-    .svg-advantages{
-        width: 50px;
-        height: 50px;
-    }
-    .list{
+    
+    &__list{
         margin: auto;
         display: flex;
         text-align: left;
-       
     }
-    .list_items{
+
+    &__list-items{
         text-align: left;
     }
-    .title{
+
+    &__svg{
+        width: 50px;
+        height: 50px;
+    }
+
+    &__title{
+        font-family: $font-logo;
         color: $primary-color;
         font-size:48px ;
         font-weight: 400px;
         line-height: 54.96px;
         padding-top:10px ;
         padding-bottom:10px ;
-       
     }
-    .text{
+
+    &__text{
+        font-size: 16px;
+        font-weight: 700px;
+        line-height: 28px;
         color:black;
         width: 70%;
     }
