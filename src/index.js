@@ -1,16 +1,25 @@
-/* modal-products */
 
-const openModal = document.querySelector('.products__info-addone', '.products__info-addtwo');
-const modal = document.querySelector('.productsmodalone','.productsmodaltwo');
-const closeModal = document.querySelector('.productsmodalone__closeone','.productsmodalone__closetwo');
+const cowOpenModal= document.querySelector('.hero-cta');
+const modal= document.querySelector('.modal-cow');
+const closeModal= document.querySelector('.modal-cow__close');
 
-  openModal.addEventListener('click', (e)=>{
+const close1 =document.querySelector('.close');
+
+cowOpenModal.addEventListener('click',(e)=>{
+e.preventDefault();
+modal.classList.add('modal-cow__show')
+});
+
+
+closeModal.addEventListener('click',(e)=>{
     e.preventDefault();
-    modal.classList.add('productsmodalone--show','productsmodaltwo--show' );
-  });
+    modal.classList.remove('modal-cow__show')
+    });
+    
+    close1.addEventListener('click',(e)=>{
+        e.preventDefault();
+        modal.classList.remove('modal-cow__show')
 
-  closeModal.addEventListener('click', (e)=>{
-    e.preventDefault();
-    modal.classList.remove('productsmodalone--show','productsmodaltwo--show');
-  });
+    });
 
+    
