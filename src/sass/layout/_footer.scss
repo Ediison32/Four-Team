@@ -4,32 +4,35 @@
     padding: 0%;
     box-sizing: border-box;
   }
+
 .footer {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
     margin: 0 auto;
     width: 1280px;
-    background-color:#FFF5F6;
+    background-color: rgba(255, 245, 246, 1);
   
-  .footer__container{
+  &__container{
     display: flex;
     flex-direction: row;
   }
   
-  .footer__subtitles{
+  &__subtitles{
     width: 50%;
     padding: 10px;
-  
+    margin-bottom: 50px;
   }
-  .footer__subtitle-one{
+
+  &__subtitle-one{
     font-family: 'Titan One' ;
     font-size: 30px;
     font-weight: 400px;
     line-height: 34.35px; 
     color:#FFA5BA;
   }
-  .footer__subtitle-two{
+
+  &__subtitle-two{
     color:#D41443;
     font-family: 'Titan One' ;
     font-size: 58px;
@@ -37,36 +40,36 @@
     line-height: 66.41px;
   }
   
-  .footer__social-network{
+  &__social-network{
     width: 50%;
   }
   
-  .footer__social-network__img-svg { 
+  &__img-svg { 
     padding: 10px;
     margin: 0;  
     display: flex; 
     align-items: center;
     justify-content: right;
     gap: 30px;
+      & .link {
+      width: 40px;
+      height: 40px;
+      clip-path: circle();
+      display: block;
+      border-radius: 4px;
+      text-decoration: none;
+      color: black;
+      background-color: #FEA5BB;
+      justify-content: center;
+      padding: 5px; 
+      &:hover{
+        text-decoration: underline;
+        background-color: #D41443;
+      }
+    }
   }
-  
-  .footer__social-network__img-svg .link {
-    width: 40px;
-    height: 40px;
-    clip-path: circle();
-    display: block;
-    border-radius: 4px;
-    text-decoration: none;
-    color: black;
-    background-color: #FEA5BB;
-   padding: 8px 0px 0px 5px; 
-  }
-  
-  .footer__social-network__img-svg .link:hover {
-    text-decoration: underline;
-    background-color: #D41443;
-  }
-  .footer__social-network__contacto {
+
+  &__contact {
     font-weight: 700px;
     line-height: 29.76px;
     font-size: 16px;
@@ -79,19 +82,20 @@
     text-decoration: none;
   }
   
-  .footer__social-network__contacto-numero{
+  &__number{
     padding-left: 2px ;
     font-size: 16px;
     font-weight: 500px;
     line-height: 29.76px;
     color: #D41443;
   }
-  .footer__h{
+
+  &__h{
     color: #E1E1E1;
     background-color:#E1E1E1 ;
-    
   }
-  .footer__made-in{
+
+  &__made-in{
     font-size: 14px;
     font-weight: 700px;
     line-height: 26.04px;
