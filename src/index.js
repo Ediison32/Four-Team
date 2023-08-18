@@ -122,3 +122,45 @@
 
 
 /* ------------------------------------------------------------------------------ */
+/* modal-products */
+
+
+
+
+
+
+
+
+
+
+
+/* ;
+
+  openModal.addEventListener('click', (e)=>{
+    e.preventDefault();
+    modal.classList.add('prodctsmodaluone--show');
+  });
+
+  closeModal.addEventListener('click', (e)=>{
+    e.preventDefault();
+    modal.classList.remove('productsmodalone--show');
+  }); */
+
+
+
+/* const openModal = document.querySelector('.products__info-addtwo');
+const modal = document.querySelector('.productsmodaltwo');
+const closeModal = document.querySelector('.productsmodalone__closetwo');
+
+  openModal.addEventListener('click', (e)=>{
+    e.preventDefault();
+    modal.classList.add('productsmodaltwo--show');
+  });
+
+  closeModal.addEventListener('click', (e)=>{
+    e.preventDefault();
+    modal.classList.remove('productsmodaltwo--show');
+  }); */
+
+
+/* modal*/
