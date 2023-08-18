@@ -124,27 +124,19 @@
 /* ------------------------------------------------------------------------------ */
 /* modal-products */
 
-
-
-
-
-
-
-
-
-
-
-/* ;
+const openModal = document.querySelector('.products__info-addone');
+const modal = document.querySelector('.productsmodalone');
+const closeModal = document.querySelector('.productsmodalone__closeone');
 
   openModal.addEventListener('click', (e)=>{
     e.preventDefault();
-    modal.classList.add('prodctsmodaluone--show');
+    modal.classList.add('productsmodalone--show');
   });
 
   closeModal.addEventListener('click', (e)=>{
     e.preventDefault();
     modal.classList.remove('productsmodalone--show');
-  }); */
+  });
 
 
 
