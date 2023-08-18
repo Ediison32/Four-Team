@@ -17,13 +17,16 @@
         padding: 0;
         align-items: center;
         margin: 37px 0px 0px 0px;
-        &a{
+        & a{
             color: #FFF;
             font-family: $font-principal;
             font-size: 16px;
             font-style: normal;
             font-weight: 700;
             line-height: normal;
+            &:hover{
+                color: rgba(212, 20, 67, 1);
+            }
         }
     }
 
@@ -39,7 +42,8 @@
         border-radius: 22px;
         background: #D41443;
         width: 159px;
-        height: 44px
+        height: 44px;
+        cursor: pointer;
     }
 
     &__svg{
@@ -254,6 +258,7 @@
         flex-shrink: 0;
         border: none;
         color: #ffff;
+        cursor: pointer;
     }
     &__btn--made{
         top: 221px;
@@ -265,6 +270,7 @@
         flex-shrink: 0;
         border: none;
         color: #ffff;
+        cursor: pointer;
     }
 }
 
