@@ -189,7 +189,8 @@
          display: flex;
          flex-direction: column;
          justify-content: left;
-         padding-left: 100px; 
+        padding: 70px;
+      
         }  
       .paragraph-one{
         color:black;
@@ -224,15 +225,16 @@
         font-weight: 700px;
         line-height: 20.16px;
         margin: 30px;
-        padding-top: 10px;
       }
       .button-read:hover{
         background-color:$primary-color;
         color:$white;
       }
        .svg{
-        margin-top: -13px;
-        padding-left: 140px;
+        width: 8px;
+        height: 10px;
+        position: absolute;
+        margin: 7px;
         }
 }
 /* section-advantages */

@@ -10,11 +10,13 @@
     box-sizing: border-box;
     margin: 0 auto;
     width: 1280px;
+    height: 253px;
     background-color:#FFF5F6;
   
   .footer__container{
     display: flex;
     flex-direction: row;
+    padding-bottom: 60px;
   }
   
   .footer__subtitles{
@@ -97,6 +99,7 @@
     line-height: 26.04px;
     color: #907E82;
     text-align: center;
+  
   }
   
 }
