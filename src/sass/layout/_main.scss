@@ -280,6 +280,19 @@
         &:hover{
             color:rgba(212, 20, 67, 1);
         }
+<<<<<<< HEAD
+    }
+
+    &__btn-list{
+        display: flex;
+        justify-content: center;
+        border-color: none;
+    }
+
+    &__btn-locations{
+        cursor: pointer;
+        border: none;
+=======
     }
 
     &__btn-list{
@@ -331,8 +344,183 @@
     }
 }
 
+/* section-about-us */
+.about-us{
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 1280px;
+    display: flex;
+    background-image:
+    url('../images/Backgrounmilk_main_about.png');
+    background-repeat: no-repeat;
+    color: var(--h1-color-white);
+    background-color: #FFF5F6;
+    
+    &__title-one {
+        color:#FFB8CA;
+        font-family: $font-logo;
+        font-weight: 400px;
+        font-size: 30px;
+        line-height: 34.35px;
+        text-align: center;
+        padding-top: 35px;
+    }
+
+    &__title-two{
+        color:$primary-color;
+        font-family: $font-logo;
+        font-weight: 400px;
+        font-size: 58px;
+        line-height: 66.41px;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    &__content{
+       display: flex;
+       flex-direction: row;
+    }
+
+    &__imagen{
+        width: 501px;
+        height: 501px;
+    }
+        
+    &__paraghaphs{
+         display: flex;
+         flex-direction: column;
+         justify-content: left;
+         padding-left: 100px; 
+         font-family: $font-principal;
+    }  
+
+    &__paragraph-one{
+        color:black;
+        width: 334px;
+        height: 95px;
+        font-size: 16px;
+        font-weight: 700px;
+        line-height: 28px;
+        text-align: justify;
+        margin: 30px;
+    }
+
+    &__paragraph-two{
+        color:$about-us-color-paragraph-two;
+        width: 334px;
+        height: 130px;
+        font-size: 16px;
+        font-weight: 700px;
+        line-height: 28px;
+        text-align: justify;
+        margin: 30px;
+    }
+
+    &__btn{
+        border: none;
+        box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.10);
+        cursor: pointer;
+    }
+
+    &__button-read{
+>>>>>>> 399f78d5c6d2d220ee64a898951832e935c4c717
+        font-family: $font-principal;
+        width: 176px;
+        height: 44px;
+        background-color: $white;
+        color: $about-us-color__button-read;
+        border-radius: 20px;
+        font-size: 16px;
+        font-weight: 700px;
+        line-height: 20.16px;
+        margin: 30px;
+<<<<<<< HEAD
+        padding: 5px;
+        box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.10);
+=======
+        padding-top: 10px;
+>>>>>>> 399f78d5c6d2d220ee64a898951832e935c4c717
+        &:hover{
+        background-color:$primary-color;
+        color:$white;
+        }
+    }
+
+<<<<<<< HEAD
+    &__btn-franchise{
+        cursor: pointer;
+        border: none;
+        width: 176px;
+        height: 44px;
+        background-color: $white;
+        color: $about-us-color__button-read;
+        font-family: $font-principal;
+        border-radius: 20px;
+        font-size: 16px;
+        font-weight: 700px;
+        line-height: 20.16px;
+        margin: 30px;
+        padding: 5px;
+        box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.10);
+        &:hover{
+        background-color:$primary-color;
+        color:$white;
+        }
+    }
+}
 
 
+
+=======
+    &__svg{
+        margin-top: -13px;
+        padding-left: 140px;
+    }
+}
+
+/* section-advantages */
+.advantages{
+    margin: 0 auto;
+    width: 1280px;
+    display: flex;
+    background-color: #FFF5F6;
+    text-align: left;
+    
+    &__list{
+        margin: auto;
+        display: flex;
+        text-align: left;
+    }
+
+    &__list-items{
+        text-align: left;
+    }
+
+    &__svg{
+        width: 50px;
+        height: 50px;
+    }
+
+    &__title{
+        font-family: $font-logo;
+        color: $primary-color;
+        font-size:48px ;
+        font-weight: 400px;
+        line-height: 54.96px;
+        padding-top:10px ;
+        padding-bottom:10px ;
+    }
+
+    &__text{
+        font-size: 16px;
+        font-weight: 700px;
+        line-height: 28px;
+        color:black;
+        width: 70%;
+    }
+}
+
+>>>>>>> 399f78d5c6d2d220ee64a898951832e935c4c717
 /*section-gallery */
 .gallery{
     justify-content: center;
