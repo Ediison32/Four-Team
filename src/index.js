@@ -1,161 +1,66 @@
-
+import * as modal from './modal';
 
 /* ---------------  custumer------------   */
-(()=>{
 
-    const dato ={
+(() => {
+  const elements = [
+      {
+          womenName: document.querySelector(".custumer__women-one"),
+          image: document.querySelector(".custumer__img"),
+          svg: document.querySelector(".custumer__svg-one"),
+          name: document.querySelector(".custumer__name-emily"),
+          comment: document.querySelector(".custumer__coment-one"),
+      },
+      {
+          womenName: document.querySelector(".custumer__women-two"),
+          image: document.querySelector(".custumer__img"),
+          svg: document.querySelector(".custumer__svg-two"),
+          name: document.querySelector(".custumer__name-laura"),
+          comment: document.querySelector(".custumer__coment-two"),
+      },
+      {
+          womenName: document.querySelector(".custumer__women-three"),
+          image: document.querySelector(".custumer__img"),
+          svg: document.querySelector(".custumer__svg-three"),
+          name: document.querySelector(".custumer__name-lara"),
+          comment: document.querySelector(".custumer__coment-three"),
+      },
+  ];
 
-        /* selecciona cursor del elemento al cual se le hace click */
-        womenNameOne: document.querySelector(".custumer__women-one"),
-        womenNameTwo:document.querySelector(".custumer__women-two"),
-        womenNameThree:document.querySelector(".custumer__women-three"),
-        
-        /* selecciona la clase a donde queremos poner la foto  */
-        imageOne:document.querySelector(".custumer__img"),
-        imageTwo:document.querySelector(".custumer__img"),
-        imageThree:document.querySelector(".custumer__img"),
+  elements.forEach((element, index) => {
+      element.womenName.addEventListener("click", () => activateElement(index));
+  });
 
+  function activateElement(index) {
+      elements.forEach((el, i) => {
+          el.svg.classList.remove("display");
+          el.image.classList.remove(`image${i + 1}`);
+          el.name.classList.remove("display2");
+          el.comment.classList.remove("display2");
+      });
 
-        /* selecciona la clase donde queremos poner el svg  */
-        svgOne:document.querySelector(".custumer__svg-one"),
-        svgTwo:document.querySelector(".custumer__svg-two"),
-        svgThree:document.querySelector(".custumer__svg-three"),
-        
-        nameEmily:document.querySelector(".custumer__name-emily"),
-        nameLaura:document.querySelector(".custumer__name-laura"),
-        nameLara:document.querySelector(".custumer__name-lara"),
-
-        comentOne:document.querySelector(".custumer__coment-one"),
-        comentTwo:document.querySelector(".custumer__coment-two"),
-        comentThree:document.querySelector(".custumer__coment-three"),
-
-    };
- 
-     
-    dato.womenNameOne.addEventListener("click", imageOne);
-    dato.womenNameTwo.addEventListener("click", imageTwo);
-    dato.womenNameThree.addEventListener("click",imageThree);
-
-    
-    function  imageOne() {
-        const svg2 = dato.svgTwo.classList.contains("display");
-        const svg3 = dato.svgThree.classList.contains("display");
-       
-        if(svg2){
-            dato.svgTwo.classList.remove("display");
-            dato.imageTwo.classList.remove("imageTwo");
-            dato.nameLaura.classList.remove("display2");
-            dato.comentTwo.classList.remove("display2");
-    
-            
-        }
-        if (svg3){
-            dato.svgThree.classList.remove("display");
-            dato.imageThree.classList.remove("imageThree")
-            dato.nameLara.classList.remove("display2");
-            dato.comentThree.classList.remove("display2");
-        }
-        dato.svgOne.classList.add("display");
-        dato.imageOne.classList.add("imageOne");
-        dato.nameEmily.classList.add("display2");
-        dato.comentOne.classList.add("display2");
-    } 
-    
-    function  imageTwo() {
-
-        const svg1= dato.svgOne.classList.contains("display");
-        const svg3 = dato.svgThree.classList.contains("display");
-    
-        if(svg1){
-            
-            dato.svgOne.classList.remove("display");
-            dato.imageOne.classList.remove("imageTwo");
-            dato.nameEmily.classList.remove("display2");
-            dato.comentOne.classList.remove("display2");
-    
-            
-        }
-        if (svg3){
-            dato.svgThree.classList.remove("display");
-            dato.imageThree.classList.remove("imageThree");
-            dato.nameLara.classList.remove("display2");
-            dato.comentThree.classList.remove("display2");
-        }
-
-        dato.svgTwo.classList.add("display");
-        dato.imageTwo.classList.add("imageTwo");
-        dato.nameLaura.classList.add("display2");
-        dato.comentTwo.classList.add("display2");
-    }
-
-    function  imageThree() {
-
-        const svg1= dato.svgOne.classList.contains("display");
-        const svg2 = dato.svgTwo.classList.contains("display");
-        
-        
-     /*    dato.imageThree.classList.toggle("imageThree");
-        dato.svgThree.classList.toggle("display"); */
-       if (svg1){
-        dato.svgOne.classList.remove("display");
-        dato.imageOne.classList.remove("imageOne");
-        dato.nameEmily.classList.remove("display2");
-        dato.comentOne.classList.remove("display2");
-        
-       }
-       if (svg2){
-        dato.svgTwo.classList.remove("display");
-        dato.imageTwo.classList.remove("imageTwo");
-        dato.nameLaura.classList.remove("display2");
-        dato.comentTwo.classList.remove("display2");
-       }
-
-       dato.svgThree.classList.add("display");
-       dato.imageThree.classList.add("imageThree");
-       dato.nameLara.classList.add("display2");
-       dato.comentThree.classList.add("display2");
+      const selectedElement = elements[index];
+      selectedElement.svg.classList.add("display");
+      selectedElement.image.classList.add(`image${index + 1}`);
+      selectedElement.name.classList.add("display2");
+      selectedElement.comment.classList.add("display2");
+  }
 
 
-    } 
+  const mod = {
+    openModal: document.querySelector(".hero__img-flecha"), // Elemento que abrirá el modal
+    modal: document.querySelector(".hero__img"), // Modal a mostrar
+    closeModal: document.querySelector(".productsmodalone__closeone"), // Botón para cerrar el modal
+  };
+  console.log("Hola1"); 
+
+  // Agregar un evento de clic al elemento para abrir el modal
+  mod.openModal.addEventListener("click", activarModal);
+
+  // Función para abrir el modal
+  function activarModal() {
+    mod.modal.classList.add("display2"); // Agregar una clase para mostrar el modal
+    console.log("Hola"); // Mostrar un mensaje en la consola (solo para verificar)
+  }
 
 })();
-
-
-/* ------------------------------------------------------------------------------ */
-/* modal-products */
-
-/* var productsmodalone { */
-  const openModal = document.querySelector('.products__info-addone', '.products__info-addtwo');
-  const modal = document.querySelector('.productsmodalone','.productsmodaltwo');
-  const closeModal = document.querySelector('.productsmodalone__closeone','.productsmodalone__closetwo');
-  
-    openModal.addEventListener('click', (e)=>{
-      e.preventDefault();
-      modal.classList.add('productsmodalone--show','productsmodaltwo--show' );
-    });
-  
-    closeModal.addEventListener('click', (e)=>{
-      e.preventDefault();
-      modal.classList.remove('productsmodalone--show','productsmodaltwo--show');
-    });
-/* }
-
-function productsmodaltwo (){
-
-  const openModal = document.querySelector('.products__info-addtwo');
-  const modal = document.querySelector('.productsmodaltwo');
-  const closeModal = document.querySelector('.productsmodalone__closetwo');
-
-    openModal.addEventListener('click', (e)=>{
-      e.preventDefault();
-      modal.classList.add('productsmodaltwo--show');
-    });
-
-    closeModal.addEventListener('click', (e)=>{
-      e.preventDefault();
-      modal.classList.remove('productsmodaltwo--show');
-    });
- */
-
-
-/* modal*/
