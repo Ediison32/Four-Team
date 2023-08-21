@@ -1,4 +1,4 @@
-
+import * as modal from './modal';
 
 /* ---------------  custumer------------   */
 (() => {
@@ -44,74 +44,27 @@
       selectedElement.name.classList.add("display2");
       selectedElement.comment.classList.add("display2");
   }
-})();
-
-/* ------------------------------------------------------------------------------ */
-/* modal-products */
-
-/* var productsmodalone { */
-/*   const openModal = document.querySelector('.products__info-addone', '.products__info-addtwo');
-  const modal = document.querySelector('.productsmodalone','.productsmodaltwo');
-  const closeModal = document.querySelector('.productsmodalone__closeone','.productsmodalone__closetwo');
-  
-    openModal.addEventListener('click', (e)=>{
-      e.preventDefault();
-      modal.classList.add('productsmodalone--show','productsmodaltwo--show' );
-    });
-  
-    closeModal.addEventListener('click', (e)=>{
-      e.preventDefault();
-      modal.classList.remove('productsmodalone--show','productsmodaltwo--show');
-    }); */
-/* }
-
-function productsmodaltwo (){
-
-  const openModal = document.querySelector('.products__info-addtwo');
-  const modal = document.querySelector('.productsmodaltwo');
-  const closeModal = document.querySelector('.productsmodalone__closetwo');
-
-    openModal.addEventListener('click', (e)=>{
-      e.preventDefault();
-      modal.classList.add('productsmodaltwo--show');
-    });
-
-    closeModal.addEventListener('click', (e)=>{
-      e.preventDefault();
-      modal.classList.remove('productsmodaltwo--show');
-    });
- */
 
 
-/* modal*/
-
-(() => {
-  const mod= { /* primer modal de product  */
-      openModal :document.querySelector(".products__info-addone"), 
-      modal: document.querySelector(".productsmodalone"),
-      closeModal: document.querySelector(".productsmodalone__closeone"),
-
-    };
-
-
-  
-
-  mod.openModal.addEventListener("click", activarModal);
-/*   mod.forEach((elemento,index) => {
-    elemento.openModal.addEventListener("click", () => activarModal(index));
-  });
-
-  function activarModal(index){
-    console.log("funcion");
-
-
-    const openMod= mod[index];
-    openMod.modal.classList.add("display2");
-
+  const mod = {
+    openModal: document.querySelector(".hero__img-flecha"), // Elemento que abrirá el modal
+    modal: document.querySelector(".hero__img"), // Modal a mostrar
+    closeModal: document.querySelector(".productsmodalone__closeone"), // Botón para cerrar el modal
   };
- */
+  
 
-  function activarModal(){
-    console.log("hla");
+  // Agregar un evento de clic al elemento para abrir el modal
+  mod.openModal.addEventListener("click", activarModal);
+
+  // Función para abrir el modal
+  function activarModal() {
+    mod.modal.classList.add("display2"); // Agregar una clase para mostrar el modal
+    
   }
+
+
+  
+
+
 })();
+
