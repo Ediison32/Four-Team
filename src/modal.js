@@ -20,6 +20,12 @@
             stilos:"productsmodalthree--show"
         },
         {
+            modals:document.querySelector(".modalcow"),
+            openModal:document.querySelector(".about-us__button-read"),
+            closeModal:document.querySelector(".modalcow__close"),
+            stilos:"modalcow--show",
+        },
+        {
             modals:document.querySelector(".officemodalone"),
             openModal:document.querySelector(".office__btn-locations"),
             closeModal:document.querySelector(".officemodalone__close"),
