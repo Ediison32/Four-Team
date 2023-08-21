@@ -50,7 +50,7 @@
 /* modal-products */
 
 /* var productsmodalone { */
-  const openModal = document.querySelector('.products__info-addone', '.products__info-addtwo');
+/*   const openModal = document.querySelector('.products__info-addone', '.products__info-addtwo');
   const modal = document.querySelector('.productsmodalone','.productsmodaltwo');
   const closeModal = document.querySelector('.productsmodalone__closeone','.productsmodalone__closetwo');
   
@@ -62,7 +62,7 @@
     closeModal.addEventListener('click', (e)=>{
       e.preventDefault();
       modal.classList.remove('productsmodalone--show','productsmodaltwo--show');
-    });
+    }); */
 /* }
 
 function productsmodaltwo (){
@@ -84,3 +84,34 @@ function productsmodaltwo (){
 
 
 /* modal*/
+
+(() => {
+  const mod= { /* primer modal de product  */
+      openModal :document.querySelector(".products__info-addone"), 
+      modal: document.querySelector(".productsmodalone"),
+      closeModal: document.querySelector(".productsmodalone__closeone"),
+
+    };
+
+
+  
+
+  mod.openModal.addEventListener("click", activarModal);
+/*   mod.forEach((elemento,index) => {
+    elemento.openModal.addEventListener("click", () => activarModal(index));
+  });
+
+  function activarModal(index){
+    console.log("funcion");
+
+
+    const openMod= mod[index];
+    openMod.modal.classList.add("display2");
+
+  };
+ */
+
+  function activarModal(){
+    console.log("hla");
+  }
+})();
