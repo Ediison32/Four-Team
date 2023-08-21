@@ -342,7 +342,7 @@
     background-repeat: no-repeat;
     color: var(--h1-color-white);
     background-color: #FFF5F6;
-    
+
     &__title-one {
         color:#FFB8CA;
         font-family: $font-logo;
@@ -360,47 +360,47 @@
         font-size: 58px;
         line-height: 66.41px;
         text-align: center;
-        margin-top: 0;
     }
 
     &__content{
        display: flex;
        flex-direction: row;
+        gap: 80px;
     }
 
-    &__imagen{
+    &__image{
+        background-color: #FFF5F6;
+    }
+    &__image-cow{
         width: 501px;
         height: 501px;
-    }
-        
+      }
+
     &__paraghaphs{
          display: flex;
          flex-direction: column;
          justify-content: left;
-         padding: 70px;
          font-family: $font-principal;
+         padding-top: 80px;
     }  
 
     &__paragraph-one{
         color:black;
         width: 334px;
-        height: 95px;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 700px;
         line-height: 28px;
-        text-align: justify;
-        margin: 30px;
+        text-align: left;
+        padding-bottom: 10px;
     }
 
     &__paragraph-two{
         color:$about-us-color-paragraph-two;
         width: 334px;
-        height: 130px;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 700px;
         line-height: 28px;
-        text-align: justify;
-        margin: 30px;
+        text-align: left;
     }
 
     &__btn{
@@ -419,7 +419,7 @@
         font-size: 16px;
         font-weight: 700px;
         line-height: 20.16px;
-        margin: 30px;
+        margin-top: 20px;
         &:hover{
         background-color:$primary-color;
         color:$white;
@@ -432,7 +432,111 @@
         position: absolute;
         margin: 7px;
     }
+   
 }
+
+@media screen and  ( max-width: 320px) {
+    .about-us{
+        margin: 0 auto;
+        margin-top: 50px;
+        width: 320px;
+        display: flex;
+        background-image:
+        url('../images/Backgrounmilk_main_about.png');
+        background-repeat: no-repeat;
+        color: var(--h1-color-white);
+        background-color: #FFF5F6;
+
+        &__title-one {
+            color:#FFB8CA;
+            font-family: $font-logo;
+            font-weight: 400px;
+            font-size: 30px;
+            line-height: 34.35px;
+            text-align: center;
+            padding-top: 35px;
+        }
+    
+        &__title-two{
+            color:$primary-color;
+            font-family: $font-logo;
+            font-weight: 400px;
+            font-size: 58px;
+            line-height: 66.41px;
+            text-align: center;
+        }
+    
+        &__content{
+           display: flex;
+           flex-direction: column;
+        }
+    
+        &__image{
+            background-color: #FFF5F6;
+        }
+        &__image-cow{
+            width: 280px;
+            height: 279px;
+          }
+    
+        &__paraghaphs{
+             display: flex;
+             flex-direction: column;
+             justify-content: left;
+             font-family: $font-principal;
+             margin: 20px; 
+        }  
+    
+        &__paragraph-one{
+            color:black;
+            width: 220px;
+            font-size: 14px;
+            font-weight: 700px;
+            line-height: 28px;
+            text-align: left;
+        }
+    
+        &__paragraph-two{
+            color:$about-us-color-paragraph-two;
+            width: 220px;
+            font-size: 14px;
+            font-weight: 700px;
+            line-height: 28px;
+            text-align: left;
+        }
+    
+        &__btn{
+            border: none;
+            box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.10);
+            cursor: pointer;
+        }
+    
+        &__button-read{
+            font-family: $font-principal;
+            width: 176px;
+            height: 44px;
+            background-color: $white;
+            color: $about-us-color__button-read;
+            border-radius: 20px;
+            font-size: 16px;
+            font-weight: 700px;
+            line-height: 20.16px;
+            margin-top: 20px;
+            &:hover{
+            background-color:$primary-color;
+            color:$white;
+            }
+        }
+    
+        &__svg{
+            width: 8px;
+            height: 10px;
+            position: absolute;
+            margin: 7px;
+        }
+}
+}
+
 
 /* section-advantages */
 .advantages{
@@ -476,6 +580,53 @@
         width: 70%;
     }
 }
+
+@media screen and  ( max-width: 320px) {
+    .advantages{
+        margin: 0 auto;
+        width: 320px;
+        display: flex;
+        background-color: #FFF5F6;
+        text-align: left;
+        
+        &__list{
+            margin: auto;
+            display: flex;
+            text-align: left;
+            padding: 20px;
+        }
+    
+        &__list-items{
+            text-align: left;
+        }
+    
+        &__svg{
+            width: 50px;
+            height: 50px;
+        }
+    
+        &__title{
+            font-family: $font-logo;
+            color: $primary-color;
+            font-size:48px ;
+            font-weight: 400px;
+            line-height: 54.96px;
+            padding-top:10px ;
+            padding-bottom:10px ;
+        }
+    
+        &__text{
+            font-size: 16px;
+            font-weight: 700px;
+            line-height: 28px;
+            color:black;
+            width: 70%;
+        }
+    }
+
+
+}
+
 /*section-gallery */
 .gallery{
     justify-content: center;
