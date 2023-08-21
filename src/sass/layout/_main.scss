@@ -333,6 +333,7 @@
 
 /* section-about-us */
 .about-us{
+    background-color: #FFF5F6;
     margin: 0 auto;
     margin-top: 50px;
     width: 1280px;
@@ -342,6 +343,7 @@
     background-repeat: no-repeat;
     color: var(--h1-color-white);
     background-color: #FFF5F6;
+ 
 
     &__title-one {
         color:#FFB8CA;
@@ -369,7 +371,7 @@
     }
 
     &__image{
-        background-color: #FFF5F6;
+        width: 501px;
     }
     &__image-cow{
         width: 501px;
@@ -467,24 +469,30 @@
         }
     
         &__content{
+            margin: 0 auto;
            display: flex;
            flex-direction: column;
         }
     
         &__image{
-            background-color: #FFF5F6;
+            margin: 0 auto;
+            width: 280px;
+            height: 279px;
         }
         &__image-cow{
             width: 280px;
             height: 279px;
+           
           }
     
         &__paraghaphs{
-             display: flex;
-             flex-direction: column;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
              justify-content: left;
              font-family: $font-principal;
              margin: 20px; 
+             margin-bottom: -50px;
         }  
     
         &__paragraph-one{
@@ -594,10 +602,13 @@
             display: flex;
             text-align: left;
             padding: 20px;
+            display:flex ;
+            flex-direction: column;
+            gap: 30;
         }
     
         &__list-items{
-            text-align: left;
+        text-align: left; 
         }
     
         &__svg{
@@ -620,7 +631,7 @@
             font-weight: 700px;
             line-height: 28px;
             color:black;
-            width: 70%;
+            width: 100%;
         }
     }
 
