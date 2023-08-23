@@ -366,59 +366,6 @@
     }
 }
 
-/* .modal-cow {
-    position: fixed;
-    top:0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #111111bd;
-    display: flex;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity .6s;
-    --transform: translatey(-100vh) ;
-    --transition: transform  .8s;
-  }
-  .modal-cowshow{
-    opacity: 1;
-    pointer-events: unset; 
-    transition: opacity .6s;
-    --transform: translatey(0) ;
-  }
-  .modal-cowcontainer{
-    margin: auto;
-    width: 400px;
-    height: 400px;
-    max-width:  600%;
-    max-height: 90%;
-    background-color: #fff;
-    border-radius: 6px;
-    padding: 3em 2.5em;
-    text-align: right;
-    transform: var(--transform);
-    transition: var(--transition)
-  }
-  .modal-cowclose{
-    text-decoration: none; 
-    color: #000;
-    background-color: whitesmoke;
-    padding:0.3em 0.3em ;
-    border: 0px  solid;
-    border-radius: 6px;
-    display: inline-block;
-    font-weight: 300;
-    transition: background-color .3s;
-  }
-    .modal-cowtitle{
-      color:$primary-color;
-      font-size: 20px;
-      font-weight: 700px;
-      line-height: 28px;
-      text-align: center;
-      margin: 10px;
-    } */
-
 .modalcow {
     position: fixed;
     justify-content: center;
@@ -494,5 +441,147 @@
         padding: 0;
         position: absolute;
         transition:cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+/* modal edison  */
+
+.buy{
+    position: fixed;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vw ;
+    background-color: #ffa5ba75;
+    margin: auto;
+    opacity: 0;
+    pointer-events: none;
+
+    &__container{
+        display: flex;
+        width: 500px;
+        height: 350px;
+        background-color: #D41443;
+        box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 
+        0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+        border-radius: 10px;
+        margin: auto;
+        flex-direction: column;
+        position: relative;
+    }
+
+    &__title{
+        font-family: $font-logo;
+        font-size: 30px;
+        font-weight: 400;
+        text-align: center;
+        color: white;
+        margin-top: 50px;
+    }
+    &__parraf{
+        font-family: $font-principal;
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center;
+        color: white;
+        margin: 30px;
+    }
+    &--show{
+        opacity: 1;
+        pointer-events: unset;
+        transition: opacity .4s;
+    }
+
+    &__btn--close{
+        background-color: white;
+        font-weight: 500;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        color: #212121;
+        margin: 20px;
+        width: 30px;
+        height: 30px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;    
+        padding: 0;
+        position: absolute;
+        transition:cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+.flecha{
+    position: fixed;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vw ;
+    background-color: #ffa5ba75;
+    margin: auto;
+    opacity: 0;
+    pointer-events: none;
+
+    &__container{
+        display: flex;
+        width: 500px;
+        height: 350px;
+        background-color: #D41443;
+        box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 
+        0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+        border-radius: 10px;
+        margin: auto;
+        flex-direction: column;
+        position: relative;
+
+    }
+    &__title{
+        font-family: $font-logo;
+        font-size: 30px;
+        font-weight: 400;
+        text-align: center;
+        color: white;
+        margin-top: 50px;
+    }
+
+    &__parraf{
+        font-family: $font-principal;
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center;
+        color: white;
+        margin: 30px;
+    }
+
+    &__btn--close{
+        background-color: white;
+        font-weight: 500;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        color: #212121;
+        margin: 20px;
+        width: 30px;
+        height: 30px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;    
+        padding: 0;
+        position: absolute;
+        transition:cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &--show{
+        opacity: 1;
+        pointer-events: unset;
+        transition: opacity .4s;
     }
 }

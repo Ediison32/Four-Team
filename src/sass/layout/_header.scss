@@ -31,7 +31,7 @@
     }
 
     &__btn-buy{
-        color: #ffff;
+        color: #D41443;
         text-align: center;
         font-family: DM Sans;
         font-size: 16px;
@@ -40,7 +40,7 @@
         line-height: normal;
         border: none;
         border-radius: 22px;
-        background: #D41443;
+        background-color: #ffffff;
         width: 159px;
         height: 44px;
         cursor: pointer;
@@ -59,12 +59,15 @@
 }
 
 .hero__btn--made:hover,
-.hero__btn--products:hover,
-.nav__btn-buy:hover{
+.hero__btn--products:hover{
     color: #D41443;
     background:#ffff ;
 }
 
+.nav__btn-buy:hover{
+    background-color:#ECEBEB; 
+    color: #D41443;
+}
 
 .hero{
    position:absolute;
@@ -135,6 +138,7 @@
     }
 
     &__img-flecha {
+        cursor: pointer;
         border: none;
         top: 451px;
         left: 230px;
