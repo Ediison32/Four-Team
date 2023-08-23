@@ -3,7 +3,7 @@
 
     const mod = [
         {
-            modals:     document.querySelector(".productsmodalone"),
+            modals: document.querySelector(".productsmodalone"),
             openModal:  document.querySelector(".products__info-addone"),
             closeModal: document.querySelector(".productsmodalone__closeone"),
             stilos:"productsmodalone--show",
@@ -19,6 +19,18 @@
             openModal:document.querySelector(".products__info-addthree"),
             closeModal:document.querySelector(".productsmodalthree__closethree"),
             stilos:"productsmodalthree--show"
+        },
+        {
+            modals:document.querySelector(".officemodalone"),
+            openModal:document.querySelector(".office__btn-locations"),
+            closeModal:document.querySelector(".officemodalone__close"),
+            stilos:"officemodalone--show",
+        },
+        {   /* header fecla  */
+            modals:document.querySelector(".flecha"),
+            openModal:document.querySelector(".hero__img-flecha"),
+            closeModal:document.querySelector(".flecha__btn--close"),
+            stilos:"flecha--show"
         },
         { /* heder encabezado  */
             modals:document.querySelector(".buy"),
