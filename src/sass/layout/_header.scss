@@ -31,7 +31,7 @@
     }
 
     &__btn-buy{
-        color: #ffff;
+        color: #D41443;
         text-align: center;
         font-family: DM Sans;
         font-size: 16px;
@@ -40,7 +40,7 @@
         line-height: normal;
         border: none;
         border-radius: 22px;
-        background: #D41443;
+        background:#FFF;
         width: 159px;
         height: 44px;
         cursor: pointer;
@@ -52,6 +52,12 @@
     }
 }
 /* ---------------nuevo svg nav */
+
+
+.nav__btn-buy:hover{
+    background-color:#ECEBEB; 
+    color: #D41443;
+}
 .nva__btn-svg{
     width: 4px;
     height: 8px;
@@ -59,8 +65,7 @@
 }
 
 .hero__btn--made:hover,
-.hero__btn--products:hover,
-.nav__btn-buy:hover{
+.hero__btn--products:hover{
     color: #D41443;
     background:#ffff ;
 }
@@ -282,3 +287,44 @@
 }
 
 
+/* media de 748px */
+
+.media__header{
+    display: none;
+}
+
+/* @media(max-width: 768px){ */
+@media only screen and (max-width: 480px) and (min-width: 320px)  {
+
+    .nav{
+        display: none;
+        
+    }
+
+    .hero{
+        display: none;
+    }
+    .media__header{
+        display: flex;
+    }
+    .media__list{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin-top: 58px;
+        color: #FFF;
+        font-family: DM Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal; 
+        gap: 22px;
+    }
+
+    .container{
+        width: 100%;
+        height: 664px;
+        display: flex;
+        justify-content: center;
+    }
+}
