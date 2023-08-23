@@ -71,6 +71,9 @@
         transition:cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
+@media only screen and (max-width: 480px) and (min-width: 320px){
+    
+}
 
 .productsmodaltwo{
     position: fixed;
