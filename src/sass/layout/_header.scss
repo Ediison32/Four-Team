@@ -31,7 +31,7 @@
     }
 
     &__btn-buy{
-        color: #ffff;
+        color: #D41443;
         text-align: center;
         font-family: DM Sans;
         font-size: 16px;
@@ -40,7 +40,7 @@
         line-height: normal;
         border: none;
         border-radius: 22px;
-        background: #D41443;
+        background-color: #ffffff;
         width: 159px;
         height: 44px;
         cursor: pointer;
@@ -51,14 +51,23 @@
         height: 50px;
     }
 }
+/* ---------------nuevo svg nav */
+.nva__btn-svg{
+    width: 4px;
+    height: 8px;
+    margin-left: 6px;
+}
 
 .hero__btn--made:hover,
-.hero__btn--products:hover,
-.nav__btn-buy:hover{
+.hero__btn--products:hover{
     color: #D41443;
     background:#ffff ;
 }
 
+.nav__btn-buy:hover{
+    background-color:#ECEBEB; 
+    color: #D41443;
+}
 
 .hero{
    position:absolute;
@@ -129,6 +138,7 @@
     }
 
     &__img-flecha {
+        cursor: pointer;
         border: none;
         top: 451px;
         left: 230px;
@@ -171,7 +181,7 @@
 
     &__title-16{
         top: 60px;
-        left: 1212px;  
+        left: 1184px;  
     }
 
     &__title-16-p{
@@ -205,7 +215,7 @@
 
     &__title-23{
         top: 163px;
-        left: 1212px;
+        left: 1184px;
     }
 
     &__tilte-23-p{
